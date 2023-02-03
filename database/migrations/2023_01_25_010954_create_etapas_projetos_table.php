@@ -15,10 +15,10 @@ return new class() extends Migration {
         Schema::create('etapas_projetos', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
-            $table->text('descricao');
+            $table->text('descricao')->nullable();
             $table->boolean('status')->default(false); // false-em andamento, true-finalizado
             $table->date('data_inicio');
-            $table->date('data_fim');
+            $table->date('data_fim')->nullable();
             $table->foreignId('projeto_id')->constrained();
             $table->timestamps();
         });

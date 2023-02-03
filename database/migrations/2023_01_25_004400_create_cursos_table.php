@@ -15,7 +15,7 @@ return new class() extends Migration {
         Schema::create('cursos', function (Blueprint $table) {
             $table->id();
             $table->string('nome_curso');
-            $table->text('descricao');
+            $table->text('descricao')->nullable();
             $table->boolean('situacao')->default(true); // false-inativo, true-ativo
             $table->timestamps();
         });

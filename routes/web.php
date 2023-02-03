@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('site.home');
+// Route::get('/', function () {
+//     return view('site.home');
+// });
+
+Route::get('/admin/usuarios', function(){
+    return view('admin.usuarios.index');
 });
+Route::get('/admin/usuarios/cadastrar', function(){
+    return view('admin.usuarios.cadastrar');
+});
+
+Route::get('/admin/usuarios/visualizar', function(){
+    return view('admin.usuarios.visualizar');
+});
+
