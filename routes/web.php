@@ -28,3 +28,11 @@ Route::get('/admin/usuarios/visualizar', function(){
     return view('admin.usuarios.visualizar');
 });
 
+Route::get('/admin/projetos/', function(){
+    return view('admin.projetos.index');
+});
+
+Route::get('/admin/projetos/cadastrar', function(){
+    return view('admin.projetos.cadastrar');
+});
+

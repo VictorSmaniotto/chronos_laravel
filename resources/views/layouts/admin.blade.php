@@ -53,7 +53,7 @@
                         <a href="" class="text-decoration-none text-dark p-3">Painel Administrativo</a>
                     </li>
                     <li class="nav-item p-3">
-
+                        <i class="fa-solid fa-layer-group"></i>
                         <a href="" class="text-decoration-none text-dark">Projetos</a>
                     </li>
                     <li class="nav-item p-3">
@@ -65,7 +65,7 @@
                         <a href="" class="text-decoration-none text-dark">Cursos</a>
                     </li>
                     <li class="nav-item p-3">
-
+                        <i class="fa-solid fa-hashtag"></i>
                         <a href="" class="text-decoration-none text-dark">Categorias</a>
                     </li>
                 </ul>
