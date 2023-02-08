@@ -45,7 +45,7 @@
     <main>
        <div class="container-fluid">
         <div class="row sidebar">
-            <div class="col-2 flex-column bg-light mt-1 p-2 flex-shrink-1 mh-100 shadow-sm">
+            <div class="col-2 flex-column bg-light mt-1 p-2 flex-shrink-1 shadow-sm">
                 <ul class="navbar-nav">
 
                     <li class="nav-item p-3 border-bottom">

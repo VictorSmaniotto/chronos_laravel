@@ -8,7 +8,7 @@
         <hr>
         <div class="formulario">
             <form class="row g-3" method="post" action="">
-                @include('admin.usuarios._formulario')
+                @include('admin.usuarios._formularioVisualizar')
             </form>
         </div>
     </div>

@@ -1,5 +1,8 @@
 <?php
 
+use Admin\UsuariosController;
+use App\Http\Controllers\Admin\CategoriaController;
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,26 +16,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('site.home');
-// });
 
-Route::get('/admin/usuarios', function(){
-    return view('admin.usuarios.index');
-});
-Route::get('/admin/usuarios/cadastrar', function(){
-    return view('admin.usuarios.cadastrar');
-});
 
-Route::get('/admin/usuarios/visualizar', function(){
-    return view('admin.usuarios.visualizar');
-});
+Route::prefix('/admin')->group(function(){
 
-Route::get('/admin/projetos/', function(){
-    return view('admin.projetos.index');
-});
+    Route::get('/usuarios', [UserController::class, 'index'])->name('admin.usuarios.index');
+    Route::get('/usuarios/visualizar/{id}', [UserController::class, 'show'])->name('admin.usuarios.visualizar');
+    Route::get('/usuarios/cadastrar', [UserController::class, 'create'])->name('admin.usuarios.cadastrar');
+    Route::post('/usuarios/cadastrar', [UserController::class, 'store'])->name('admin.usuarios.cadastrar');
+    Route::get('/usuarios/editar/{id}', [UserController::class, 'edit'])->name('admin.usuarios.editar');
+    Route::put('/usuarios/editar/{id}', [UserController::class, 'update'])->name('admin.usuarios.editar');
+    Route::delete('/usuarios/deletar/{id}', [UserController::class, 'destroy'])->name('admin.usuarios.deletar');
 
-Route::get('/admin/projetos/cadastrar', function(){
-    return view('admin.projetos.cadastrar');
+
+    Route::get('/categorias', [CategoriaController::class, 'index'])->name('admin.categorias.index');
+    Route::get('/categorias/cadastrar', [CategoriaController::class, 'create'])->name('admin.categorias.cadastrar');
+    Route::post('/categorias/cadastrar', [CategoriaController::class, 'store'])->name('admin.categorias.cadastrar');
+    Route::get('/categorias/editar/{id}', [CategoriaController::class, 'edit'])->name('admin.categorias.editar');
+    Route::put('/categorias/editar/{id}', [CategoriaController::class, 'update'])->name('admin.categorias.editar');
+    Route::delete('/categorias/deletar/{id}', [CategoriaController::class, 'destroy'])->name('admin.categorias.deletar');
+
 });
 

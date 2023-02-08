@@ -19,7 +19,7 @@ return new class() extends Migration {
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->tinyInteger('tipo_usuario')->default(1); // 1-admin, 2-professor, 3-aluno, 4-gestao
-            $table->boolean('situacao')->default(true); // false-inativo, true-ativo
+            $table->tinyInteger('situacao')->default(1); // 0-inativo, 1-ativo
             $table->string('foto')->nullable();
             $table->rememberToken();
             $table->timestamps();

@@ -1,17 +1,17 @@
 @extends('layouts.admin')
 
-@section('titulo', 'Usuários')
+@section('titulo', 'Categorias')
 
 @section('conteudo')
 
 <div class="row">
     <div class="col-md-12">
-        <h1>Usuários</h1> <hr>
+        <h1>Categorias</h1> <hr>
     </div>
 </div>
 <div class="row">
     <div>
-        <a href="{{ route('admin.usuarios.cadastrar') }}" class="btn btn-primary mb-3">Cadastrar</a>
+        <a href="{{ route('admin.categorias.cadastrar') }}" class="btn btn-primary mb-3">Cadastrar</a>
 
     </div>
 
@@ -24,27 +24,20 @@
               <tr class="table-dark">
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
-                <th scope="col">Email</th>
-                <th scope="col">Tipo</th>
-                <th scope="col">Status</th>
                 <th scope="col">Ação</th>
               </tr>
             </thead>
             <tbody>
 
-                @forelse ($usuarios as $user)
+                @forelse ($categorias as $cate)
 
 
               <tr>
-                <th scope="row">{{$user->id}}</th>
-                <td>{{$user->nome}}</td>
-                <td>{{$user->email}}</td>
-                <td>{{$user->tipo_usuario}}</td>
-                <td>{{$user->situacao}}</td>
+                <th scope="row">{{$cate->id}}</th>
+                <td>{{$cate->nome_categoria}}</td>
                 <td class="d-flex">
-                    <a href="{{ route('admin.usuarios.visualizar',['id'=> $user->id ]) }}" class="btn btn-sm btn-info text-light me-2"><i class="fas fa-eye"></i></a>
-                    <a href="{{ route('admin.usuarios.editar',['id'=> $user->id ]) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
-                    <form action="{{ route('admin.usuarios.deletar', ['id' => $user->id]) }}" method="post">
+                    <a href="{{ route('admin.categorias.editar',['id'=> $cate->id ]) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                    <form action="{{ route('admin.categorias.deletar', ['id' => $cate->id]) }}" method="post">
                         @csrf
                          @method('DELETE')
                        <button class="btn btn-danger btn-sm ms-2" onclick="return confirm('Deseja Deletar o Registro?')" type="submit"
