@@ -57,7 +57,7 @@
     </main>
 
 
-    <footer class="container-fluid mt-5 bg-primary">
+    <footer class="container-fluid mt-5 bg-primary fixed-bottom">
         <div class="row">
             <div class="col-12 p-3 text-center">
                 <a href="index.php" class="navbar-brand">

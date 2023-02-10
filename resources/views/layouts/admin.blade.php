@@ -58,7 +58,7 @@
                     </li>
                     <li class="nav-item p-3">
                         <i class="fas fa-user-group"></i>
-                        <a href="" class="text-decoration-none text-dark">Usuários</a>
+                        <a href="{{ route('admin.usuarios.index') }}" class="text-decoration-none text-dark">Usuários</a>
                     </li>
                     <li class="nav-item p-3">
                         <i class="fas fa-graduation-cap"></i>
@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item p-3">
                         <i class="fa-solid fa-hashtag"></i>
-                        <a href="" class="text-decoration-none text-dark">Categorias</a>
+                        <a href="{{ route('admin.categorias.index') }}" class="text-decoration-none text-dark">Categorias</a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +82,7 @@
     </main>
 
 
-    <footer class="container-fluid mt-5 bg-primary">
+    <footer class="container-fluid mt-5 bg-primary fixed-bottom">
         <div class="row">
             <div class="col-12 p-3 text-center">
                 <a href="index.php" class="navbar-brand">
