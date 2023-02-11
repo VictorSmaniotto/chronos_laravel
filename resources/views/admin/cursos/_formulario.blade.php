@@ -10,27 +10,24 @@
 @endif
 
 
-
-
-
 <div class="col-md-12">
     <label for="nome_curso" class="form-label">Curso</label>
-    <input type="text" class="form-control" name="nome_curso" id="nome_curso" value="{{ old('nome_curso', $curso->nome_categoria) }}" placeholder="Nome do curso">
-    @error('nome_curso')
+    <input type="text" class="form-control" name="nome_curso" id="nome_curso" value="{{ old('nome_curso', $curso->nome_curso) }}" placeholder="Nome do curso">
+    {{-- @error('nome_curso')
     <div class="invalid-feedback">
         {{ $message }}
     </div>
-@enderror
+@enderror --}}
 </div>
 
 <div class="col-md-12">
     <label for="descricao" class="form-label">Descrição</label>
-    <textarea name="descricao" class="form-control" name="descricao" id="descricao" rows="8">{{ old('nome_curso', $curso->nome_categoria) }}</textarea>
-    @error('descricao')
+    <textarea name="descricao" class="form-control" name="descricao" id="descricao" rows="8">{{ old('nome_curso', $curso->descricao) }}</textarea>
+    {{-- @error('descricao')
     <div class="invalid-feedback">
         {{ $message }}
     </div>
-@enderror
+@enderror --}}
 </div>
 
 
@@ -44,6 +41,6 @@
 
 <div class="col-12">
     <button type="submit" class="btn btn-primary">Salvar</button>
-    <a href="{{ route('admin.categorias.index') }}" class="btn btn-danger">Cancelar</a>
+    <a href="{{ route('admin.cursos.index') }}" class="btn btn-danger">Cancelar</a>
 </div>
 
