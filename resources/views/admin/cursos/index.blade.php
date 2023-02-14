@@ -35,7 +35,7 @@
 
 
               <tr>
-                <th scope="row">{{$cursos->id}}</th>
+                <th scope="row">{{$curso->id}}</th>
                 <td>{{$curso->nome_curso}}</td>
                 <td>{{$curso->descricao}}</td>
                 <td>{{$curso->situacao}}</td>

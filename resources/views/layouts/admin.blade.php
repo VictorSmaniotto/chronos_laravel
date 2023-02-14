@@ -62,7 +62,7 @@
                     </li>
                     <li class="nav-item p-3">
                         <i class="fas fa-graduation-cap"></i>
-                        <a href="" class="text-decoration-none text-dark">Cursos</a>
+                        <a href="{{ route('admin.cursos.index') }}" class="text-decoration-none text-dark">Cursos</a>
                     </li>
                     <li class="nav-item p-3">
                         <i class="fa-solid fa-hashtag"></i>

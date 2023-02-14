@@ -16,7 +16,7 @@ return new class() extends Migration {
             $table->id();
             $table->string('nome_curso');
             $table->text('descricao')->nullable();
-            $table->boolean('situacao')->default(true); // false-inativo, true-ativo
+            $table->smallInteger('situacao')->default(1); // 0-inativo, 1-ativo
             $table->timestamps();
         });
     }

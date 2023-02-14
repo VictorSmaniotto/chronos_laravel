@@ -1,11 +1,12 @@
 <?php
 
 use Admin\UsuariosController;
-use App\Http\Controllers\Admin\CategoriaController;
-use App\Http\Controllers\Admin\CursoController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\UserController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\CursoController;
+use App\Http\Controllers\Admin\ProjetoController;
+use App\Http\Controllers\Admin\CategoriaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,13 @@ Route::prefix('/admin')->group(function(){
     Route::get('/cursos/editar/{id}', [CursoController::class, 'edit'])->name('admin.cursos.editar');
     Route::put('/cursos/editar/{id}', [CursoController::class, 'update'])->name('admin.cursos.editar');
     Route::delete('/cursos/deletar/{id}', [CursoController::class, 'destroy'])->name('admin.cursos.deletar');
+
+    Route::get('/projetos', [ProjetoController::class, 'index'])->name('admin.cursos.index');
+    Route::get('/projetos/cadastrar', [ProjetoController::class, 'create'])->name('admin.projetos.cadastrar');
+    Route::post('/projetos/cadastrar', [ProjetoController::class, 'store'])->name('admin.projetos.cadastrar');
+    Route::get('/projetos/editar/{id}', [ProjetoController::class, 'edit'])->name('admin.projetos.editar');
+    Route::put('/projetos/editar/{id}', [ProjetoController::class, 'update'])->name('admin.projetos.editar');
+    Route::delete('/projetos/deletar/{id}', [ProjetoController::class, 'destroy'])->name('admin.projetos.deletar');
 
 });
 
