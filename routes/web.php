@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('site.home');
 });
+
+Route::get('/projetos', function () {
+    return view('site.projetos');
+});
