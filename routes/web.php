@@ -2,6 +2,7 @@
 
 use Admin\UsuariosController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Site\SiteController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\CursoController;
@@ -19,6 +20,7 @@ use App\Http\Controllers\Admin\CategoriaController;
 |
 */
 
+Route::get('/', [SiteController::class, 'index'])->name('site.home');
 
 
 Route::prefix('/admin')->group(function(){

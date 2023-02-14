@@ -7,13 +7,7 @@
     <div class="container mt-3">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center fs-1">CHRONOS</h2>
-                <div class="col-md-6 mx-auto">
-                    <p class="text-center">
-                       Empresa capacitada para atender as suas necessitades.
-                    </p>
-                </div>
-
+                <h2 class="text-center mt-3 mb-3">PROJETOS</h2>
                 <form method="get" action="">
                     <div class="col-md-6 mx-auto">
                         <input type="text" class="form-control is-invalid" name="nome" id="nome"
@@ -26,26 +20,10 @@
 
         </div>
 
-        <div class="row g-4">
-            <div class="col-md-12">
 
-            </div>
-            <div class="col-md-9">
-                <img src="/img/cards/blogger-2838945_1280.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-3 ">
-                <h3 class="mt-1">
-                    Gestão de Projeto para Instituições Financeiras
-                </h3>
-                <p>
-                   Obtenção de um conteúdo onde totalmente integrado a sistuações em que as Empresas devem estar atentas a cada passo dado para uma boa geração de renda e produção rentável, tendo em vista toda e qualquer situação, para que não ocorra erros futuros.
-                </p>
+        <div class="row g-4 mt-5">
 
-                <a href="" class="btn btn-primary">Ver Completo</a>
-
-            </div>
-
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6">
                 <img src="/img/cards/despaired-2261021_1280.jpg" alt="" class="img-fluid">
 
                 <h3 class="mt-1">Gestão de Projeto Hospitalares </h3>
@@ -54,7 +32,7 @@
 
                     <a href="" class="btn btn-primary">Ver Completo</a>
             </div>
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6">
                 <img src="/img/cards/entrepreneur-593371_1280.jpg" alt="" class="img-fluid">
 
                 <h3 class="mt-1">Gestão de Projeto Organizacionais</h3>
@@ -64,11 +42,7 @@
                     <a href="" class="btn btn-primary">Ver Completo</a>
             </div>
         </div>
-
-            <div class="mt-5 col-md-2 mx-auto">
-                <a href="" class="btn btn-warning btn-lg">Ver Todos</a>
-            </div>
-
+        </div>
 
 
 
