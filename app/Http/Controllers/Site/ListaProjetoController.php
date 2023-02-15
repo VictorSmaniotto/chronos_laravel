@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ProjetoController extends Controller
+class ListaProjetoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ProjetoController extends Controller
      */
     public function index()
     {
-        //
+        return view('site.projetos');
     }
 
     /**

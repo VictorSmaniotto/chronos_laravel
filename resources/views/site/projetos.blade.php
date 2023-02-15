@@ -9,9 +9,12 @@
             <div class="col-md-12">
                 <h2 class="text-center mt-3 mb-3">PROJETOS</h2>
                 <form method="get" action="">
-                    <div class="col-md-6 mx-auto">
-                        <input type="text" class="form-control is-invalid" name="nome" id="nome"
+                    <div class="col-md-6 mx-auto d-flex">
+                        <input type="text" class="form-control is-invalid me-1" name="nome" id="nome"
                             placeholder="Procurar projeto">
+
+                            <button type="submit" class="btn btn-primary">Pesquisar</button>
+
                     </div>
 
                 </form>

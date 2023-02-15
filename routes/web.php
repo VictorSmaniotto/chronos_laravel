@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\CursoController;
 use App\Http\Controllers\Admin\ProjetoController;
 use App\Http\Controllers\Admin\CategoriaController;
+use App\Http\Controllers\Site\ListaProjetoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,9 +22,10 @@ use App\Http\Controllers\Admin\CategoriaController;
 */
 
 Route::get('/', [SiteController::class, 'index'])->name('site.home');
+Route::get('/projetos', [ListaProjetoController::class, 'index'])->name('site.projetos');
 
 
-Route::prefix('/admin')->group(function(){
+Route::prefix('/admin')->group(function () {
 
     // Route::get('/admin/home', [HomeController::class, 'index'])->name('admin.home.index');
 
@@ -57,6 +59,4 @@ Route::prefix('/admin')->group(function(){
     Route::get('/projetos/editar/{id}', [ProjetoController::class, 'edit'])->name('admin.projetos.editar');
     Route::put('/projetos/editar/{id}', [ProjetoController::class, 'update'])->name('admin.projetos.editar');
     Route::delete('/projetos/deletar/{id}', [ProjetoController::class, 'destroy'])->name('admin.projetos.deletar');
-
 });
-
