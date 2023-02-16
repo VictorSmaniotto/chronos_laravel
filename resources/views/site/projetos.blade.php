@@ -10,10 +10,10 @@
                 <h2 class="text-center mt-3 mb-3">PROJETOS</h2>
                 <form method="get" action="">
                     <div class="col-md-6 mx-auto d-flex">
-                        <input type="text" class="form-control is-invalid me-1" name="nome" id="nome"
+                        <input type="text" class="form-control me-1" name="nome" id="nome"
                             placeholder="Procurar projeto">
 
-                            <button type="submit" class="btn btn-primary">Pesquisar</button>
+                            <button type="submit" class="btn btn-outline-primary"><i class="fas fa-search"></i></button>
 
                     </div>
 

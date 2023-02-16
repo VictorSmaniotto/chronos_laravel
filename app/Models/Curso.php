@@ -13,7 +13,7 @@ class Curso extends Model
 
     protected $fillable = [
         'id',
-        'nome_cursos',
+        'nome_curso',
         'descricao',
         'situacao',
     ];

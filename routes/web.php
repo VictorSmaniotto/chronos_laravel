@@ -27,7 +27,7 @@ Route::get('/projetos', [ListaProjetoController::class, 'index'])->name('site.pr
 
 Route::prefix('/admin')->group(function () {
 
-    // Route::get('/admin/home', [HomeController::class, 'index'])->name('admin.home.index');
+    Route::get('/admin/index', [HomeController::class, 'index'])->name('admin.index');
 
     Route::get('/usuarios', [UserController::class, 'index'])->name('admin.usuarios.index');
     Route::get('/usuarios/visualizar/{id}', [UserController::class, 'show'])->name('admin.usuarios.visualizar');
@@ -53,7 +53,7 @@ Route::prefix('/admin')->group(function () {
     Route::put('/cursos/editar/{id}', [CursoController::class, 'update'])->name('admin.cursos.editar');
     Route::delete('/cursos/deletar/{id}', [CursoController::class, 'destroy'])->name('admin.cursos.deletar');
 
-    Route::get('/projetos', [ProjetoController::class, 'index'])->name('admin.cursos.index');
+    Route::get('/projetos', [ProjetoController::class, 'index'])->name('admin.projetos.index');
     Route::get('/projetos/cadastrar', [ProjetoController::class, 'create'])->name('admin.projetos.cadastrar');
     Route::post('/projetos/cadastrar', [ProjetoController::class, 'store'])->name('admin.projetos.cadastrar');
     Route::get('/projetos/editar/{id}', [ProjetoController::class, 'edit'])->name('admin.projetos.editar');

@@ -54,7 +54,7 @@
                     </li>
                     <li class="nav-item p-3">
                         <i class="fa-solid fa-layer-group"></i>
-                        <a href="" class="text-decoration-none text-dark">Projetos</a>
+                        <a href="{{ route('admin.projetos.index') }}" class="text-decoration-none text-dark">Projetos</a>
                     </li>
                     <li class="nav-item p-3">
                         <i class="fas fa-user-group"></i>
@@ -82,7 +82,7 @@
     </main>
 
 
-    <footer class="container-fluid mt-5 bg-primary fixed-bottom">
+    <footer class="container-fluid mt-5 bg-primary">
         <div class="row">
             <div class="col-12 p-3 text-center">
                 <a href="index.php" class="navbar-brand">

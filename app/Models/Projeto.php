@@ -23,4 +23,24 @@ class Projeto extends Model
         'curso_id',
         'categoria_id',
     ];
+
+    public function categoria()
+    {
+        return $this->belongsTo(Categoria::class);
+    }
+
+    public function curso()
+    {
+        return $this->belongsTo(Curso::class);
+    }
+
+    // public function labelStatus()
+    // {
+    //     $status = [
+    //         1 => 'Ativo',
+    //         2 => 'Inativo'
+    //     ];
+
+    //     return $status[$this->situacao];
+    // }
 }

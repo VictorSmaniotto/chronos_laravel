@@ -33,7 +33,7 @@
                             <a href="index.php" class="nav-link text-dark">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a href="projetos.php" class="nav-link text-dark">Projetos</a>
+                            <a href="{{ route('site.projetos') }}" class="nav-link text-dark">Projetos</a>
                         </li>
                         <li class="nav-item">
                             <a href="index.php" class="nav-link text-dark">Eventos</a>
