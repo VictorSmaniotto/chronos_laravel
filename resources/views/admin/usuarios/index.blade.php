@@ -39,8 +39,8 @@
                 <th scope="row">{{$user->id}}</th>
                 <td>{{$user->nome}}</td>
                 <td>{{$user->email}}</td>
-                <td>{{$user->tipo_usuario}}</td>
-                <td>{{$user->situacao}}</td>
+                <td>{{$user->label_tipo}}</td>
+                <td>{{$user->label_status}}</td>
                 <td class="d-flex">
                     <a href="{{ route('admin.usuarios.visualizar',['id'=> $user->id ]) }}" class="btn btn-sm btn-info text-light me-2"><i class="fas fa-eye"></i></a>
                     <a href="{{ route('admin.usuarios.editar',['id'=> $user->id ]) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>

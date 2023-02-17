@@ -24,7 +24,7 @@
         </div>
 
 
-        <div class="row g-4 mt-5">
+        {{-- <div class="row g-4 mt-5">
 
             <div class="col-md-6">
                 <img src="/img/cards/despaired-2261021_1280.jpg" alt="" class="img-fluid">
@@ -44,16 +44,24 @@
 
                     <a href="" class="btn btn-primary">Ver Completo</a>
             </div>
-        </div>
-        </div>
+        </div> --}}
 
+        @foreach ($projeto as $proj )
 
+            <div class="row g-4 mt-5">
 
+                <div class="col-md-8 mx-auto">
+                    <img src="{{ asset("storage/projetosMidias/{$proj->capa}") }}" alt="" class="img-fluid">
 
+                    <h3 class="mt-2">{{$proj->nome_projeto}} </h3>
 
+                    <p class="mt-3">{{$proj->descricao}}</p>
 
+                        <a href="{{ route('site.projetos.visualizar', ['id'=>$proj->id]) }}" class="btn btn-primary">Ver Completo</a>
+                </div>
+            </div>
+        @endforeach
 
-    </div>
 
 
 @endsection

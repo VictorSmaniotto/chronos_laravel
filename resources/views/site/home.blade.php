@@ -6,8 +6,9 @@
 
     <div class="container mt-3">
         <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center fs-1">CHRONOS</h2>
+            <div class="col-md-12 text-center">
+                <img src="/img/logoChronos.png" class="d-inline-block mt-2 ms-auto" width="300"
+                        alt="Logo Chronos">
                 <div class="col-md-6 mx-auto">
                     <p class="text-center">
                        Empresa capacitada para atender as suas necessitades.
@@ -16,7 +17,7 @@
 
                 <form method="get" action="">
                     <div class="col-md-6 mx-auto">
-                        <input type="text" class="form-control is-invalid" name="nome" id="nome"
+                        <input type="text" class="form-control " name="nome" id="nome"
                             placeholder="Procurar projeto">
                     </div>
 

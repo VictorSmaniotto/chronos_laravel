@@ -2,23 +2,17 @@
 
 namespace App\Models;
 
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-
-class User extends Model
+class User extends Authenticatable
 {
-    use HasFactory;
+    use HasApiTokens, HasFactory, Notifiable;
 
-    protected $table = "users";
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+
     protected $fillable = [
         'nome',
         'email',
@@ -48,10 +42,26 @@ class User extends Model
         'email_verified_at' => 'datetime',
     ];
 
-    public function getLabelStatus(){
-        $status = [
-            0 => 'Inativo',
-            1 => 'Ativo'
-        ];
-    }
+
+    public function getLabelStatusAttribute()
+    {
+         $status = [
+             1 => 'Ativo',
+             0 => 'Inativo'
+         ];
+
+         return $status[$this->situacao];
+     }
+
+     public function getLabelTipoAttribute()
+     {
+          $status = [
+              1 => 'Administrador',
+              2 => 'Gestor',
+              3 => 'Professor',
+              4 => 'Aluno'
+          ];
+
+          return $status[$this->tipo_usuario];
+      }
 }

@@ -57,22 +57,22 @@
 
 
 
-<div class="col-md-3">
+<div class="col-md-12">
     <label for="capa" class="form-label">Capa</label>
     <input type="file" class="form-control" id="capa" name="capa" value="{{ old('capa'),$projeto->capa }}">
 </div>
 
-<div class="col-md-3">
+<div class="col-md-4">
     <label for="data_criacao" class="form-label">Criado em</label>
     <input type="date" class="form-control" id="data_criacao" name="data_criacao" value="{{ old('data_criacao',$projeto->data_criacao) }}">
 </div>
 
-<div class="col-md-3">
+<div class="col-md-4">
     <label for="data_entrega" class="form-label">Entregue em</label>
     <input type="date" class="form-control" id="data_entrega" name="data_entrega" value="{{ old('data_entrega', $projeto->data_entrega) }}">
 </div>
 
-<div class="col-md-3">
+<div class="col-md-4">
     <label for="situacao" class="form-label">Situação</label>
     <select class="form-control" id="situacao" name="situacao">
         <option value="1" {{ old('situacao', $projeto->situacao) == '1' ? 'selected' : '' }}>Ativo</option>

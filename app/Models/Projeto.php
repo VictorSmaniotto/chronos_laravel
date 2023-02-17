@@ -34,13 +34,13 @@ class Projeto extends Model
         return $this->belongsTo(Curso::class);
     }
 
-    // public function labelStatus()
-    // {
-    //     $status = [
-    //         1 => 'Ativo',
-    //         2 => 'Inativo'
-    //     ];
+    public function getLabelStatusAttribute()
+    {
+         $status = [
+             1 => 'Ativo',
+             2 => 'Inativo'
+         ];
 
-    //     return $status[$this->situacao];
-    // }
+         return $status[$this->situacao];
+     }
 }

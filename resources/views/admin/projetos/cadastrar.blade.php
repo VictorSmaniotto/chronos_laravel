@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('titulo', 'Cadastrar')
+
 @section('conteudo')
 
 <div class="row">

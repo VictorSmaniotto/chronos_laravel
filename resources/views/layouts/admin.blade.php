@@ -35,7 +35,7 @@
                 <div class="collapse navbar-collapse mt-2 mb-2" id="navbarText">
                     <span class="sessao-usuario ms-auto">
                         <a href="" class=""><img src="/img/avatar.png" class="rounded-circle border" width="65"></a>
-                        <a href="" class="btn btn-danger">Sair</a>
+                        <a href="{{ route('logout') }}" class="btn btn-danger">Sair</a>
                     </span>
                 </div>
             </div>

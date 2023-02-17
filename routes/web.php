@@ -2,6 +2,7 @@
 
 use Admin\UsuariosController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Site\SiteController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\UserController;
@@ -23,9 +24,14 @@ use App\Http\Controllers\Site\ListaProjetoController;
 
 Route::get('/', [SiteController::class, 'index'])->name('site.home');
 Route::get('/projetos', [ListaProjetoController::class, 'index'])->name('site.projetos');
+Route::get('/projetos/{id}', [ListaProjetoController::class, 'show'])->name('site.projetos.visualizar');
+
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/login', [LoginController::class, 'postLogin'])->name('post.login');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
-Route::prefix('/admin')->group(function () {
+Route::prefix('/admin')->middleware('auth')->group(function () {
 
     Route::get('/admin/index', [HomeController::class, 'index'])->name('admin.index');
 

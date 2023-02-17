@@ -30,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav ms-auto mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="index.php" class="nav-link text-dark">Início</a>
+                            <a href="{{ route('site.home') }}" class="nav-link text-dark">Início</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('site.projetos') }}" class="nav-link text-dark">Projetos</a>
@@ -44,8 +44,8 @@
                     </ul>
 
                     <span class="sessao-usuario me-5">
-                        <a href="" class="btn btn-outline-primary">Criar Conta</a>
-                        <a href="" class="btn btn-primary">Entrar</a>
+                        {{-- <a href="" class="btn btn-outline-primary">Criar Conta</a> --}}
+                        <a href="{{ route('login') }}" class="btn btn-primary">Entrar</a>
                     </span>
                 </div>
             </div>

@@ -38,7 +38,7 @@
                 <th scope="row">{{$curso->id}}</th>
                 <td>{{$curso->nome_curso}}</td>
                 <td>{{$curso->descricao}}</td>
-                <td>{{$curso->situacao}}</td>
+                <td>{{$curso->label_status}}</td>
                 <td class="d-flex">
                     <a href="{{ route('admin.cursos.editar',['id'=> $curso->id ]) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                     <form action="{{ route('admin.cursos.deletar', ['id' => $curso->id]) }}" method="post">

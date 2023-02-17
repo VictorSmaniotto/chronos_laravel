@@ -21,15 +21,11 @@
               <tr class="table-dark">
                 <th scope="col">#</th>
                 <th scope="col">Título</th>
-                <th scope="col">Descrição</th>
-                <th scope="col">Objetivo</th>
-                <th scope="col">Palavras Chave</th>
-                <th scope="col">Capa</th>
                 <th scope="col">Criado em</th>
                 <th scope="col">Entregue em</th>
                 <th scope="col">Status</th>
-                <th scope="col">curso_id</th>
-                <th scope="col">categoria_id</th>
+                <th scope="col">Curso</th>
+                <th scope="col">Categoria</th>
                 <th scope="col">Ação</th>
               </tr>
             </thead>
@@ -40,13 +36,9 @@
                 <tr>
                   <th scope="row">{{$proj->id}}</th>
                   <td>{{$proj->nome_projeto}}</td>
-                  <td>{{$proj->descricao}}</td>
-                  <td>{{$proj->objetivo}}</td>
-                  <td>{{$proj->palavras_chave}}</td>
-                  <td>{{$proj->capa}}</td>
-                  <td>{{$proj->data_criacao}}</td>
-                  <td>{{$proj->data_entrega}}</td>
-                  <td>{{$proj->labelStatus}}</td>
+                  <td>{{date("d/m/Y", strtotime($proj->data_criacao))}}</td>
+                  <td>{{date("d/m/Y", strtotime($proj->data_entrega))}}</td>
+                  <td>{{$proj->label_status}}</td>
                   <td>{{$proj->curso->nome_curso}}</td>
                   <td>{{$proj->categoria->nome_categoria}}</td>
                   <td class="d-flex">

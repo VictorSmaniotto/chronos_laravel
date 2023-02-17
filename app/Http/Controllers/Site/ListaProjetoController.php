@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Http\Controllers\Controller;
+use App\Models\Projeto;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ListaProjetoController extends Controller
 {
@@ -14,7 +15,9 @@ class ListaProjetoController extends Controller
      */
     public function index()
     {
-        return view('site.projetos');
+
+         $projeto = Projeto::all();
+        return view('site.projetos', ['projeto' => $projeto]);
     }
 
     /**
@@ -27,26 +30,16 @@ class ListaProjetoController extends Controller
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function show($id)
     {
-        //
+        return view('site.abrirProjeto', ['projeto' => Projeto::findOrFail($id)]);
     }
 
     /**

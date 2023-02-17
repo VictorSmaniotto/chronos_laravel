@@ -37,7 +37,7 @@ class ProjetoController extends Controller
             $nome = uniqid(date('HisYmd'));
             $extension = $request->capa->extension();
             $nomeMidia = "{$nome}.{$extension}";
-            $upload = $request->capa->storeAs('projetosMidias', $nomeMidia);
+            $upload = $request->capa->storeAs('public/projetosMidias', $nomeMidia);
             if ( !$upload )
             return redirect()
                         ->back()

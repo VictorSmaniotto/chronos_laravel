@@ -17,4 +17,14 @@ class Curso extends Model
         'descricao',
         'situacao',
     ];
+
+    public function getLabelStatusAttribute()
+    {
+         $status = [
+             1 => 'Ativo',
+             0 => 'Inativo'
+         ];
+
+         return $status[$this->situacao];
+     }
 }
