@@ -5,7 +5,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class() extends Migration {
+return new class() extends Migration
+{
     /**
      * Run the migrations.
      *
@@ -22,7 +23,7 @@ return new class() extends Migration {
             $table->date('data_entrega')->nullable();
             $table->boolean('situacao')->default(true); // false-inativo, true-ativo
             $table->string('capa')->nullable(); // armazena o caminho da imagem
-            $table->string('palavras-chave')->nullable();
+            $table->string('palavras_chave')->nullable();
             $table->foreignId('curso_id')->constrained();
             $table->foreignId('categoria_id')->constrained();
             $table->timestamps();

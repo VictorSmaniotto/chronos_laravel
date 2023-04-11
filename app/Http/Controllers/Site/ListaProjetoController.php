@@ -16,8 +16,8 @@ class ListaProjetoController extends Controller
     public function index()
     {
 
-         $projeto = Projeto::all();
-        return view('site.projetos', ['projeto' => $projeto]);
+        $projeto = Projeto::all();
+        return view('site.projetos2', ['projeto' => $projeto]);
     }
 
     /**
