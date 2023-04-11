@@ -17,6 +17,16 @@
     padding-left: 10px;
 } */
 
+#menu {
+    background-color: #fff;
+}
+
+#menu .menu-item a {
+    color: #0e6094 !important;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
 .search-bar button {
     border: none;
     margin-left: -3rem;
@@ -182,11 +192,18 @@
 
 /* card-projeto */
 
+.cards {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
 .card-projeto {
-    width: min(50%, 20rem);
+    width: min(50%, 19rem);
     background-color: #fff;
     border-radius: 10px;
-    /* padding: 20px; */
+    margin-bottom: 1.6rem;
+    margin-right: 1.6rem;
 }
 
 .card-projeto img {
