@@ -194,28 +194,36 @@
 
 .cards {
     display: flex;
-    /* justify-content: space-between; */
+    /* justify-content: flex-start; */
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .card-projeto {
-    width: min(50%, 19rem);
+    width: min(50%, 18rem);
     background-color: #fff;
     border-radius: 10px;
-    margin-bottom: 1.6rem;
-    margin-right: 1.6rem;
+    /* margin-bottom: 1.6rem; */
+    /* margin-right: 1.6rem; */
 }
+
+.card-projeto a{
+    text-decoration: none;
+
+}
+
 
 .card-projeto img {
     width: min(100%, 20rem);
     border-radius: 10px 10px 0 0;
 }
 
-.card-projeto .card-corpo {
+.card-projeto  .card-corpo {
     padding: 20px;
+    color: #212529;
 }
 
-.card-projeto .card-corpo a {
+.card-projeto .card-corpo h4 {
     text-decoration: none;
     font-size: 1.2rem;
     color: #0e6094;

@@ -87,58 +87,106 @@
         <div class="col-lg-9">
            <div class="cards">
             <div class="card-projeto shadow">
-                <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
+                <a href="#">
+                    <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
                 <div class="card-corpo">
-                    <p class="text-muted">Categoria - Jan. 2023</p>
-                    <h4 class="fw-bold"><a href="">Título do projeto publicado</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
+                    <p class="text-muted small">Categoria - Jan. 2023</p>
+                    <h4 class="fw-bold">Título do projeto publicado</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
                 </div>
+                </a>
             </div>
 
             <div class="card-projeto shadow">
-                <img src="img\cards\entrepreneur-593371_1280.jpg" alt="Card imagem">
+                <a href="#">
+                    <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
                 <div class="card-corpo">
-                    <p class="text-muted">Categoria - Jan. 2023</p>
-                    <h4 class="fw-bold"><a href="">Título do projeto publicado</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
+                    <p class="text-muted small">Categoria - Jan. 2023</p>
+                    <h4 class="fw-bold">Título do projeto publicado</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
                 </div>
+                </a>
             </div>
 
             <div class="card-projeto shadow">
-                <img src="img\cards\entrepreneur-593371_1280.jpg" alt="Card imagem">
+                <a href="#">
+                    <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
                 <div class="card-corpo">
-                    <p class="text-muted">Categoria - Jan. 2023</p>
-                    <h4 class="fw-bold"><a href="">Título do projeto publicado</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
+                    <p class="text-muted small">Categoria - Jan. 2023</p>
+                    <h4 class="fw-bold">Título do projeto publicado</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
                 </div>
+                </a>
+            </div>
+
+           <div class="cards">
+            <div class="card-projeto shadow">
+                <a href="#">
+                    <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
+                <div class="card-corpo">
+                    <p class="text-muted small">Categoria - Jan. 2023</p>
+                    <h4 class="fw-bold">Título do projeto publicado</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
+                </div>
+                </a>
             </div>
 
             <div class="card-projeto shadow">
-                <img src="img\cards\entrepreneur-593371_1280.jpg" alt="Card imagem">
+                <a href="#">
+                    <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
                 <div class="card-corpo">
-                    <p class="text-muted">Categoria - Jan. 2023</p>
-                    <h4 class="fw-bold"><a href="">Título do projeto publicado</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
+                    <p class="text-muted small">Categoria - Jan. 2023</p>
+                    <h4 class="fw-bold">Título do projeto publicado</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
                 </div>
+                </a>
             </div>
 
             <div class="card-projeto shadow">
-                <img src="img\cards\entrepreneur-593371_1280.jpg" alt="Card imagem">
+                <a href="#">
+                    <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
                 <div class="card-corpo">
-                    <p class="text-muted">Categoria - Jan. 2023</p>
-                    <h4 class="fw-bold"><a href="">Título do projeto publicado</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
+                    <p class="text-muted small">Categoria - Jan. 2023</p>
+                    <h4 class="fw-bold">Título do projeto publicado</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
                 </div>
+                </a>
+            </div>
+
+           <div class="cards">
+            <div class="card-projeto shadow">
+                <a href="#">
+                    <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
+                <div class="card-corpo">
+                    <p class="text-muted small">Categoria - Jan. 2023</p>
+                    <h4 class="fw-bold">Título do projeto publicado</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
+                </div>
+                </a>
             </div>
 
             <div class="card-projeto shadow">
-                <img src="img\cards\entrepreneur-593371_1280.jpg" alt="Card imagem">
+                <a href="#">
+                    <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
                 <div class="card-corpo">
-                    <p class="text-muted">Categoria - Jan. 2023</p>
-                    <h4 class="fw-bold"><a href="">Título do projeto publicado</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
+                    <p class="text-muted small">Categoria - Jan. 2023</p>
+                    <h4 class="fw-bold">Título do projeto publicado</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
                 </div>
+                </a>
             </div>
+
+            <div class="card-projeto shadow">
+                <a href="#">
+                    <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
+                <div class="card-corpo">
+                    <p class="text-muted small">Categoria - Jan. 2023</p>
+                    <h4 class="fw-bold">Título do projeto publicado</h4>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit ut repellendus asperiores? Omnis et possimus rem voluptatem laboriosam cumque ad nulla sunt sapiente blanditiis itaque, nobis repellat quas a.</p>
+                </div>
+                </a>
+            </div>
+
 
            </div>
         </div>
