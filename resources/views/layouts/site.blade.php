@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css\main.css">
 </head>
 
-<body class="bg-light">
+<body>
     <header class="container-fluid shadow-sm">
         <nav id="menu" class="navbar navbar-expand-sm ">
             <div class="container-fluid">
