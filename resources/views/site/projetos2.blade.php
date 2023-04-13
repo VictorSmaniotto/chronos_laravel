@@ -86,6 +86,23 @@
 
         <div class="col-lg-9">
            <div class="cards">
+
+            @foreach($projeto as $proj)
+
+            <div class="card-projeto shadow">
+                <a href="#">
+                    <img src={{ asset("storage/projetosMidias/{$proj->capa}") }} alt="Card imagem">
+                <div class="card-corpo">
+                    <p class="text-muted small">{{$proj->categoria->nome_categoria}} - {{$proj->data_entrega}}</p>
+                    <h4 class="fw-bold">{{$proj->nome_projeto}}</h4>
+                    <p class="fs-6">{{$proj->descricao}}</p>
+                </div>
+                </a>
+            </div>
+
+            @endforeach
+
+
             <div class="card-projeto shadow">
                 <a href="#">
                     <img src="img/cards/entrepreneur-593371_1280.jpg" alt="Card imagem">
