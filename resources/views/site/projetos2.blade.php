@@ -90,7 +90,7 @@
             @foreach($projeto as $proj)
 
             <div class="card-projeto shadow">
-                <a href="#">
+                <a href="{{route('site.projetos.visualizar', ['id'=> $proj->id ])}}">
                     <img src={{ asset("storage/projetosMidias/{$proj->capa}") }} alt="Card imagem">
                 <div class="card-corpo">
                     <p class="text-muted small">{{$proj->categoria->nome_categoria}} - {{$proj->data_entrega}}</p>

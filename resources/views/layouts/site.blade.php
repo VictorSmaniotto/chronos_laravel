@@ -17,7 +17,7 @@
         <nav id="menu" class="navbar navbar-expand-sm ">
             <div class="container-fluid">
                 <a href="index.php" class="navbar-brand">
-                    <img src="img/logoChronos.png" class="d-inline-block mt-2" width="160"
+                    <img src="/img/logoChronos.png" class="d-inline-block mt-2" width="160"
                         alt="Logo Chronos">
                 </a>
 
@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-12 p-3 text-center">
                 <a href="index.php" class="navbar-brand">
-                    <img src="img/logo-reduzida.png" alt="Logo Chronos" width="25">
+                    <img src="/img/logo-reduzida.png" alt="Logo Chronos" width="25">
                 </a>
                 <div class="p-3 text-center text-light">
                     2022 &copy; - Todos os Direitos são reservados

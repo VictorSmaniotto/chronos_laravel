@@ -39,7 +39,7 @@ class ListaProjetoController extends Controller
 
     public function show($id)
     {
-        return view('site.abrirProjeto', ['projeto' => Projeto::findOrFail($id)]);
+        return view('site.projetoShow', ['projeto' => Projeto::findOrFail($id)]);
     }
 
     /**
