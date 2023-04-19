@@ -23,7 +23,8 @@
             <form method="get" action="">
                 <div class="col-md-12">
                     <input type="text" class="form-control site-pesquisar shadow-sm" name="nome" id="nome"
-                        placeholder="Pesquisar">
+                        placeholder="Pesquisar projetos">
+
                 </div>
             </form>
 
