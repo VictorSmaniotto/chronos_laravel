@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.036" height="28.023" viewBox="0 0 15.036 28.023">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004a8d;
+      }
+    </style>
+  </defs>
+  <path id="arrow-left-svgrepo-com" class="cls-1" d="M21.518,0a.941.941,0,0,1,.663,1.6l-12.5,12.5L22,26.421a.939.939,0,0,1-1.328,1.328L7.693,14.771a.941.941,0,0,1,0-1.328L20.853.277A.944.944,0,0,1,21.517,0Z" transform="translate(-7.419)"/>
+</svg>

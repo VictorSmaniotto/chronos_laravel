@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.655" height="16.995" viewBox="0 0 31.655 16.995">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004587;
+      }
+    </style>
+  </defs>
+  <path id="arrow-down-svgrepo-com" class="cls-1" d="M.256,8.606a1.063,1.063,0,0,1,1.813-.75L16.188,21.975,30.1,8.063a1.061,1.061,0,0,1,1.5,1.5L16.938,24.232a1.063,1.063,0,0,1-1.5,0L.569,9.363a1.053,1.053,0,0,1-.313-.756Z" transform="translate(-0.256 -7.547)"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.257" height="28.257" viewBox="0 0 28.257 28.257">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #004587;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="SVGRepo_iconCarrier" transform="translate(1 1)">
+    <path id="Caminho_29" data-name="Caminho 29" class="cls-1" d="M20.5,16.128H16.128m0,0H11.752m4.376,0V11.752m0,4.376V20.5m7.294,8.752H8.835A5.835,5.835,0,0,1,3,23.422V8.835A5.835,5.835,0,0,1,8.835,3H23.422a5.835,5.835,0,0,1,5.835,5.835V23.422A5.835,5.835,0,0,1,23.422,29.257Z" transform="translate(-3 -3)"/>
+  </g>
+</svg>

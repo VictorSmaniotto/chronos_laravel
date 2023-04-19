@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.078" height="30.078" viewBox="0 0 30.078 30.078">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #004587;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="lupa_2_" data-name="lupa (2)" transform="translate(-2 -2)">
+    <path id="Caminho_1" data-name="Caminho 1" class="cls-1" d="M15,15l9.221,9.221" transform="translate(6.442 6.442)"/>
+    <path id="Caminho_2" data-name="Caminho 2" class="cls-2" d="M24.516,13.758A10.758,10.758,0,1,1,13.758,3,10.758,10.758,0,0,1,24.516,13.758Z" transform="translate(0 0)"/>
+  </g>
+</svg>

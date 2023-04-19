@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49.837" height="33.023" viewBox="0 0 49.837 33.023">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #004587;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <path id="menu_2_" data-name="menu (2)" class="cls-1" d="M4,35.023H48.837M4,21.011H48.837M4,7H48.837" transform="translate(-1.5 -4.5)"/>
+</svg>
