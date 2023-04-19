@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,400;0,600;1,400;1,500;1,600&display=swap");
 :root {
     --font-principal: "Poppins", sans-serif;
-    --cor-laranja-principal: #f7941d;
-    --cor-azul-principal: #0e6094;
-    --cor-linhas: #ff7f00;
+    --font-textos-serifada: "Roboto Serif", serif;
+    --cor-laranja-claro: #f7941d;
+    --cor-laranja-principal: #ff7f00;
+    --cor-laranja-escuro: #cc6600;
+    --cor-azul-claro: #0e6094;
+    --cor-azul-principal: #004587;
+    --cor-azul-escuro: #0052a1;
+    --cinza-claro: #dee1e3;
+    --cinza-claro2: #73818f;
+    --cinza-medio: #4d4d4d;
+    --cinza: #212529;
+    --bg-cinza: #f3f3f2;
 }
 
 /* ***************** Pagina Projetos***************** */
