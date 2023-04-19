@@ -247,3 +247,7 @@ body {
 }
 
 /* -------------------Projeto aberto ---------------------- */
+
+.projeto-aberto {
+    width: min(100%, 50%);
+}
