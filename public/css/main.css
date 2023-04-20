@@ -251,3 +251,7 @@ body {
 .projeto-aberto {
     width: min(100%, 50%);
 }
+
+.projeto-aberto li {
+    border: 3px solid var(--cinza-medio);
+}
