@@ -26,7 +26,7 @@
 
                     Nossos profissionais especializados em educação infantil acompanham de perto o desenvolvimento de cada criança, criando estratégias personalizadas para maximizar seu potencial. Além disso, nos preocupamos em promover um ambiente seguro, acolhedor e estimulante para as crianças, incentivando hábitos saudáveis de alimentação, sono e higiene, além de oferecer atividades de lazer que promovam a socialização e o desenvolvimento emocional.
 
-                    Em resumo, nós do HERA oferecemos uma abordagem completa e inovadora para acelerar o desenvolvimento cognitivo das crianças, através de atividades práticas, acompanhamento pedagógico individualizado e cuidados com o bem-estar infantil. Nosso objetivo é proporcionar às crianças as ferramentas e o ambiente ideal para que possam alcançar seu máximo potencial.</p>
+                    Em resumo, nós do HERA oferecemos uma abordagem completa e inovadora para acelerar o desenvolvimento cognitivo das crianças, através de atividades práticas, acompanhamento pedagógico individualizado e cuidados com o bem-estar infantil. Nosso objetivo é proporcionar às crianças as ferramentas e o ambiente ideal para que possam alcançar seu máximo potencial...</p>
                 </div>
             </div>
         </div>
