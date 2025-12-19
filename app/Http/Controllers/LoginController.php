@@ -26,7 +26,7 @@ class LoginController extends Controller
 
         } else {
             return redirect()->back()->withInput()->withErrors([
-                'email' => 'E-mail ou Senha inválido!',
+                'email' => 'Credenciais inválidas.',
             ]);
         }
     }
