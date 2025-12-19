@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This is a Laravel 9 web application project built with PHP 8.0+. The project uses Vite for frontend asset compilation and follows Laravel framework conventions.
+This is a Laravel 9 web application project built with PHP 8.0.2+. The project uses Vite for frontend asset compilation and follows Laravel framework conventions.
 
 ## Technology Stack
 
-- **Backend**: Laravel 9.x, PHP 8.0+
+- **Backend**: Laravel 9.x, PHP 8.0.2+
 - **Frontend**: Vite, Bootstrap Icons
 - **Testing**: PHPUnit
 - **Code Quality**: Laravel Pint (code style)
