@@ -105,7 +105,8 @@ php artisan test
 ## Security Practices
 - Never commit `.env` file or sensitive credentials
 - Use Laravel's built-in CSRF protection
-- Sanitize user input and use parameter binding for database queries
+- Sanitize user input and validate all data
+- Use Eloquent ORM and Query Builder for automatic SQL injection protection
 - Use Laravel's authentication and authorization features (Gates, Policies)
 - Keep dependencies up to date
 
