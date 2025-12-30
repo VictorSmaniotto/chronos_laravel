@@ -1,0 +1,3 @@
+## 2024-05-23 - [Form Accessibility & Usability Patterns]
+**Learning:** Bootstrap's `.invalid-feedback` requires sibling inputs to have `.is-invalid` or parent `.was-validated` to be visible. Without this, error messages rendered by the backend are hidden from the user. Additionally, inputs lacking `aria-describedby` pointing to error messages are inaccessible to screen reader users in error states.
+**Action:** Always bind the `.is-invalid` class to the `@error` directive in Blade templates. Ensure every error message container has a unique ID and the corresponding input uses `aria-describedby` to reference it when an error exists.
