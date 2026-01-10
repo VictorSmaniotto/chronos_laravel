@@ -16,6 +16,9 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
+<body>
+    <a href="#main-content" class="visually-hidden-focusable">Pular para o conteúdo principal</a>
+
     <header>
       <div class="container-fluid shadow-sm">
         <nav class="navbar navbar-expand-sm">
@@ -34,7 +37,7 @@
 
                 <div class="collapse navbar-collapse mt-2 mb-2" id="navbarText">
                     <span class="sessao-usuario ms-auto">
-                        <a href="" class=""><img src="/img/avatar.png" class="rounded-circle border" width="65"></a>
+                        <a href="" class=""><img src="/img/avatar.png" alt="Avatar do usuário" class="rounded-circle border" width="65"></a>
                         <a href="{{ route('logout') }}" class="btn btn-danger">Sair</a>
                     </span>
                 </div>
@@ -42,7 +45,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main-content">
        <div class="container-fluid">
         <div class="row sidebar">
             <div class="col-2 flex-column bg-light mt-1 p-2 flex-shrink-1 shadow-sm">
