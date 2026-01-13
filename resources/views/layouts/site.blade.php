@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <a class="visually-hidden-focusable p-3 link-light bg-primary" href="#main-content">Pular para o conteúdo principal</a>
     <header class="container-fluid shadow-sm">
         <nav id="menu" class="navbar navbar-expand-sm ">
             <div class="container-fluid">
@@ -52,7 +53,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         @yield('conteudo')
     </main>
 
