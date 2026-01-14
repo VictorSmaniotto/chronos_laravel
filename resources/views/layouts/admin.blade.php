@@ -16,6 +16,11 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
+<body>
+    <a href="#main-content" class="visually-hidden-focusable p-3 bg-white text-primary position-absolute start-0 top-0 z-3">
+        Pular para o conteúdo principal
+    </a>
+
     <header>
       <div class="container-fluid shadow-sm">
         <nav class="navbar navbar-expand-sm">
@@ -71,7 +76,7 @@
                 </ul>
             </div>
 
-            <div class="col-9">
+            <div class="col-9" id="main-content">
                <section class="mt-5 ms-3 container-fluid">
                    @yield('conteudo')
                </section>
