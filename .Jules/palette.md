@@ -1,0 +1,3 @@
+## 2024-05-22 - Login Form Accessibility & Validation
+**Learning:** Bootstrap 5 validation states (`is-invalid`) are required to show default error messages, but Blade's `@error` directive alone doesn't apply this class. We must explicitly condition the class application on the error existence. Also, `aria-describedby` is critical for linking inputs to error messages for screen readers, a pattern often missed in standard Laravel scaffolding.
+**Action:** Always verify that form inputs with server-side validation include conditional `is-invalid` classes and `aria-describedby` attributes linking to the error container's ID.
