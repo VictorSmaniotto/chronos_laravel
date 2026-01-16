@@ -1,0 +1,3 @@
+## 2024-03-21 - Bootstrap Form Accessibility
+**Learning:** Bootstrap validation requires specific class orchestration for accessibility. The `.invalid-feedback` element alone is insufficient; it requires the sibling input to have the `.is-invalid` class to be visible. Crucially, for screen readers, the input must explicitly link to the error message ID using `aria-describedby` when in an error state.
+**Action:** When implementing server-side validation in Blade templates using Bootstrap, always apply a conditional `is-invalid` class to the input (`@error('field') is-invalid @enderror`) and conditionally add `aria-describedby="field-error"` pointing to the error div's ID.
