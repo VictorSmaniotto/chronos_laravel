@@ -40,12 +40,12 @@
                 <td>{{$curso->descricao}}</td>
                 <td>{{$curso->label_status}}</td>
                 <td class="d-flex">
-                    <a href="{{ route('admin.cursos.editar',['id'=> $curso->id ]) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                    <a href="{{ route('admin.cursos.editar',['id'=> $curso->id ]) }}" class="btn btn-sm btn-primary" aria-label="Editar curso {{$curso->nome_curso}}"><i class="fas fa-edit"></i></a>
                     <form action="{{ route('admin.cursos.deletar', ['id' => $curso->id]) }}" method="post">
                         @csrf
                          @method('DELETE')
                        <button class="btn btn-danger btn-sm ms-2" onclick="return confirm('Deseja Deletar o Registro?')" type="submit"
-                          name="Delete">
+                          name="Delete" aria-label="Deletar curso {{$curso->nome_curso}}">
                            <i class="fas fa-trash"></i>
                        </button>
                  </form>
