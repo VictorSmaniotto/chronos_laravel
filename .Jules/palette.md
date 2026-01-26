@@ -1,0 +1,3 @@
+## 2024-10-24 - Skip Link Z-Index Verification
+**Learning:** Skip links implemented with `position: absolute` or `fixed` must explicitly set a high `z-index` (e.g., using Bootstrap's `.fixed-top` or `.z-3`), otherwise they may be rendered "visible" but unclickable if overlapped by other stacked elements like sticky headers. Playwright's `click()` action correctly catches this "interception" issue which might be missed by simple visibility checks.
+**Action:** Always verify skip link interactivity (clickability) in addition to visibility, and use `.fixed-top` or high z-index utilities when the link overlays header content.
