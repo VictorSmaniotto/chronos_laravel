@@ -13,7 +13,7 @@
                         <input type="text" class="form-control me-1" name="nome" id="nome"
                             placeholder="Procurar projeto">
 
-                            <button type="submit" class="btn btn-outline-primary"><i class="fas fa-search"></i></button>
+                            <button type="submit" class="btn btn-outline-primary" aria-label="Pesquisar projeto"><i class="fas fa-search"></i></button>
 
                     </div>
 

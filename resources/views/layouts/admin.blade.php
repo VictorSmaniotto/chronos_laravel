@@ -16,6 +16,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
+<body>
     <header>
       <div class="container-fluid shadow-sm">
         <nav class="navbar navbar-expand-sm">
