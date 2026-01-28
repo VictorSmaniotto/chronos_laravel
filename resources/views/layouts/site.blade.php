@@ -13,6 +13,9 @@
 </head>
 
 <body>
+    <a href="#main-content" class="visually-hidden-focusable position-absolute top-0 start-0 p-3 bg-light" style="z-index: 1050;">
+        Pular para o conteúdo principal
+    </a>
     <header class="container-fluid shadow-sm">
         <nav id="menu" class="navbar navbar-expand-sm ">
             <div class="container-fluid">
@@ -52,7 +55,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         @yield('conteudo')
     </main>
 
