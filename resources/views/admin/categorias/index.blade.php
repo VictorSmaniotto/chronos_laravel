@@ -36,16 +36,17 @@
                 <th scope="row">{{$cate->id}}</th>
                 <td>{{$cate->nome_categoria}}</td>
                 <td class="d-flex">
-                    <a href="{{ route('admin.categorias.editar',['id'=> $cate->id ]) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                    <a href="{{ route('admin.categorias.editar',['id'=> $cate->id ]) }}" class="btn btn-sm btn-primary" aria-label="Editar categoria"><i class="fas fa-edit"></i></a>
                     <form action="{{ route('admin.categorias.deletar', ['id' => $cate->id]) }}" method="post">
                         @csrf
                          @method('DELETE')
                        <button class="btn btn-danger btn-sm ms-2" onclick="return confirm('Deseja Deletar o Registro?')" type="submit"
-                          name="Delete">
+                          name="Delete" aria-label="Excluir categoria">
                            <i class="fas fa-trash"></i>
                        </button>
                  </form>
                 </td>
+              </tr>
                 @empty
 
                 <tr>
@@ -54,7 +55,6 @@
                     </td>
                 </tr>
             @endforelse
-              </tr>
 
             </tbody>
           </table>

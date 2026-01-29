@@ -42,16 +42,17 @@
                   <td>{{$proj->curso->nome_curso}}</td>
                   <td>{{$proj->categoria->nome_categoria}}</td>
                   <td class="d-flex">
-                      <a href="{{ route('admin.projetos.editar',['id'=> $proj->id ]) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                      <a href="{{ route('admin.projetos.editar',['id'=> $proj->id ]) }}" class="btn btn-sm btn-primary" aria-label="Editar projeto"><i class="fas fa-edit"></i></a>
                       <form action="{{ route('admin.projetos.deletar', ['id' => $proj->id]) }}" method="post">
                           @csrf
                            @method('DELETE')
                          <button class="btn btn-danger btn-sm ms-2" onclick="return confirm('Deseja Deletar o Registro?')" type="submit"
-                            name="Delete">
+                            name="Delete" aria-label="Deletar projeto">
                              <i class="fas fa-trash"></i>
                          </button>
                    </form>
                   </td>
+                </tr>
                   @empty
 
                   <tr>
@@ -60,7 +61,6 @@
                       </td>
                   </tr>
               @endforelse
-                </tr>
 
 
             </tbody>

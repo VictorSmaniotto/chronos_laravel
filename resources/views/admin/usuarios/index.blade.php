@@ -42,17 +42,18 @@
                 <td>{{$user->label_tipo}}</td>
                 <td>{{$user->label_status}}</td>
                 <td class="d-flex">
-                    <a href="{{ route('admin.usuarios.visualizar',['id'=> $user->id ]) }}" class="btn btn-sm btn-info text-light me-2"><i class="fas fa-eye"></i></a>
-                    <a href="{{ route('admin.usuarios.editar',['id'=> $user->id ]) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                    <a href="{{ route('admin.usuarios.visualizar',['id'=> $user->id ]) }}" class="btn btn-sm btn-info text-light me-2" aria-label="Visualizar usuário"><i class="fas fa-eye"></i></a>
+                    <a href="{{ route('admin.usuarios.editar',['id'=> $user->id ]) }}" class="btn btn-sm btn-primary" aria-label="Editar usuário"><i class="fas fa-edit"></i></a>
                     <form action="{{ route('admin.usuarios.deletar', ['id' => $user->id]) }}" method="post">
                         @csrf
                          @method('DELETE')
                        <button class="btn btn-danger btn-sm ms-2" onclick="return confirm('Deseja Deletar o Registro?')" type="submit"
-                          name="Delete">
+                          name="Delete" aria-label="Excluir usuário">
                            <i class="fas fa-trash"></i>
                        </button>
                  </form>
                 </td>
+              </tr>
                 @empty
 
                 <tr>
@@ -61,7 +62,6 @@
                     </td>
                 </tr>
             @endforelse
-              </tr>
 
             </tbody>
           </table>
