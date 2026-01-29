@@ -46,6 +46,7 @@
                        </button>
                  </form>
                 </td>
+              </tr>
                 @empty
 
                 <tr>
@@ -54,7 +55,6 @@
                     </td>
                 </tr>
             @endforelse
-              </tr>
 
             </tbody>
           </table>
