@@ -25,7 +25,7 @@ class LoginController extends Controller
            return redirect()->route('admin.usuarios.index');
 
         } else {
-            return redirect()->back()->withInput()->with('error', 'E-mail ou Senha inválido!');
+            return redirect()->back()->withInput($request->except('password'))->with('error', 'E-mail ou Senha inválido!');
         }
     }
 
