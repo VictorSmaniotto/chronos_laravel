@@ -17,10 +17,7 @@
 </head>
 
 <body>
-    <a href="#main-content" class="visually-hidden-focusable p-3 bg-white text-primary position-absolute start-0 top-0 z-3">
-        Pular para o conteúdo principal
-    </a>
-
+    <a href="#main-content" class="visually-hidden-focusable p-3">Pular para o conteúdo principal</a>
     <header>
       <div class="container-fluid shadow-sm">
         <nav class="navbar navbar-expand-sm">
@@ -39,7 +36,7 @@
 
                 <div class="collapse navbar-collapse mt-2 mb-2" id="navbarText">
                     <span class="sessao-usuario ms-auto">
-                        <a href="" class=""><img src="/img/avatar.png" class="rounded-circle border" width="65"></a>
+                        <a href="" class=""><img src="/img/avatar.png" alt="Avatar do usuário" class="rounded-circle border" width="65"></a>
                         <a href="{{ route('logout') }}" class="btn btn-danger">Sair</a>
                     </span>
                 </div>
@@ -47,7 +44,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main-content">
        <div class="container-fluid">
         <div class="row sidebar">
             <div class="col-2 flex-column bg-light mt-1 p-2 flex-shrink-1 shadow-sm">
@@ -76,8 +73,8 @@
                 </ul>
             </div>
 
-            <div class="col-9" id="main-content">
-               <section class="mt-5 ms-3 container-fluid">
+            <div class="col-9">
+               <section id="main-content" class="mt-5 ms-3 container-fluid">
                    @yield('conteudo')
                </section>
             </div>
