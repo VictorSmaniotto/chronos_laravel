@@ -20,8 +20,7 @@ class LoginController extends Controller
             'password' => ['required'],
         ]);
 
-        if (Auth::attempt(['email' => $request->email, 'password' =>  $request->password])) {
-
+        if (Auth::attempt($credentials)) {
            return redirect()->route('admin.usuarios.index');
 
         } else {
@@ -29,6 +28,10 @@ class LoginController extends Controller
                 'email' => 'Credenciais inválidas.',
             ]);
         }
+
+        return back()->withErrors([
+            'email' => 'E-mail ou Senha inválido!',
+        ])->onlyInput('email');
     }
 
     public function logout()
