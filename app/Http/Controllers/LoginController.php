@@ -15,14 +15,18 @@ class LoginController extends Controller
 
     public function postLogin(Request $request)
     {
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
 
-        if (Auth::attempt(['email' => $request->email, 'password' =>  $request->password])) {
-
+        if (Auth::attempt($credentials)) {
            return redirect()->route('admin.usuarios.index');
-
-        } else {
-            return redirect()->back()->withInput()->with('error', 'E-mail ou Senha inválido!');
         }
+
+        return back()->withErrors([
+            'email' => 'E-mail ou Senha inválido!',
+        ])->onlyInput('email');
     }
 
     public function logout()
