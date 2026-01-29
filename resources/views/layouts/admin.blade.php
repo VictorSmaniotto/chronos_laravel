@@ -16,7 +16,8 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
-    <a class="visually-hidden-focusable p-2 m-2" href="#main-content">Pular para o conteúdo principal</a>
+<body>
+    <a href="#main-content" class="visually-hidden-focusable p-3">Pular para o conteúdo principal</a>
     <header>
       <div class="container-fluid shadow-sm">
         <nav class="navbar navbar-expand-sm">
