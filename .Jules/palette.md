@@ -1,7 +1,14 @@
-## 2024-05-22 - [Initial Setup]
-**Learning:** The project lacks a journal file, so I created one. The project structure is a standard Laravel app with Blade templates.
-**Action:** Will document all future critical learnings here.
+## 2024-12-21 - [Bootstrap 5 Server-Side Validation Pattern]
+**Learning:** Bootstrap 5 requires `.is-invalid` class on inputs to show `.invalid-feedback`. Blade's `@error` directive is present but only renders the message; it doesn't automatically add the class.
+**Action:** When working on forms, always wrap inputs with `class="form-control @error('field') is-invalid @enderror"` to ensure users actually see the validation messages.
+## 2024-05-24 - Accessibility Patterns for Laravel Blade Forms
 
-## 2024-05-22 - [Admin Index Accessibility]
-**Learning:** The admin index pages (`projetos`, `usuarios`, `cursos`, `categorias`) use icon-only buttons for actions (Edit, Delete, View) without `aria-label` attributes. This makes them inaccessible to screen reader users who would only hear "link" or "button". Using dynamic data in the label (e.g., "Editar projeto [Nome]") provides necessary context.
-**Action:** Always verify icon-only interactive elements for `aria-label`. Use dynamic content in the label where possible for better context.
+**Learning:**
+Laravel's validation errors in Blade templates require explicit accessibility handling. Simply using `@error` to show a message is insufficient for screen readers. Inputs need the `is-invalid` class to trigger visual cues in Bootstrap, and more importantly, they need `aria-describedby` pointing to the error message's ID so screen readers announce the error immediately when the field is focused.
+
+**Action:**
+When implementing forms in Blade:
+1. Use `@error('field') is-invalid @enderror` on the input class.
+2. Assign a unique ID to the error message container (e.g., `id="email-error"`).
+3. Add `@error('field') aria-describedby="email-error" @enderror` to the input.
+4. Ensure `value="{{ old('field') }}"` is present to preserve user context.
