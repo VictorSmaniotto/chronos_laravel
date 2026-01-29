@@ -16,6 +16,8 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
+<body>
+    <a href="#main-content" class="visually-hidden-focusable p-3">Pular para o conteúdo principal</a>
     <header>
       <div class="container-fluid shadow-sm">
         <nav class="navbar navbar-expand-sm">
@@ -42,7 +44,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main-content">
        <div class="container-fluid">
         <div class="row sidebar">
             <div class="col-2 flex-column bg-light mt-1 p-2 flex-shrink-1 shadow-sm">
