@@ -48,7 +48,7 @@
                         @csrf
                          @method('DELETE')
                        <button class="btn btn-danger btn-sm ms-2" onclick="return confirm('Deseja Deletar o Registro?')" type="submit"
-                          name="Delete" aria-label="Deletar usuário">
+                          name="Delete" aria-label="Excluir usuário">
                            <i class="fas fa-trash"></i>
                        </button>
                  </form>
