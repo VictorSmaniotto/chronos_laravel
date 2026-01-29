@@ -14,7 +14,7 @@
 <div class="col-md-12">
     <label for="nome_projeto" class="form-label">Título</label>
     <input type="text" class="form-control @error('nome_projeto') is-invalid @enderror" name="nome_projeto" id="nome_projeto" placeholder="Título do Projeto" value="{{ old('nome_projeto', $projeto->nome_projeto)}}">
-    @error('nome_projeto')
+ @error('nome_projeto')
     <div class="invalid-feedback">
         {{ $message }}
     </div>
@@ -24,7 +24,8 @@
 <div class="col-md-12">
     <label for="descricao" class="form-label">Descrição</label>
     <textarea name="descricao" class="form-control @error('descricao') is-invalid @enderror" id="descricao" rows="4">{{ old('descricao',$projeto->descricao) }}</textarea>
-    @error('descricao')
+
+@error('descricao')
     <div class="invalid-feedback">
         {{ $message }}
     </div>
@@ -34,7 +35,7 @@
 <div class="col-md-12">
     <label for="objetivo" class="form-label">Objetivo</label>
     <textarea name="objetivo" class="form-control @error('objetivo') is-invalid @enderror" id="objetivo" rows="4"> {{ old('objetivo',$projeto->objetivo) }} </textarea>
-    @error('objetivo')
+ @error('objetivo')
     <div class="invalid-feedback">
         {{ $message }}
     </div>
@@ -44,7 +45,7 @@
 <div class="col-md-12">
     <label for="palavras_chave" class="form-label">Palavras Chave</label>
     <textarea name="palavras_chave" class="form-control @error('palavras_chave') is-invalid @enderror" id="palavras_chave" rows="4">{{ old('palavras_chave',$projeto->palavras_chave) }}</textarea>
-    @error('palavras_chave')
+ @error('palavras_chave')
     <div class="invalid-feedback">
         {{ $message }}
     </div>
