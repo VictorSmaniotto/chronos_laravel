@@ -12,3 +12,7 @@ When implementing forms in Blade:
 2. Assign a unique ID to the error message container (e.g., `id="email-error"`).
 3. Add `@error('field') aria-describedby="email-error" @enderror` to the input.
 4. Ensure `value="{{ old('field') }}"` is present to preserve user context.
+
+## 2026-01-29 - [Inconsistent Form Validation Feedback]
+**Learning:** While project forms implement partial validation feedback, other admin forms (e.g., Cursos) lack the `.is-invalid` class logic entirely, rendering server-side validation errors invisible to users despite the error message blocks being present in the code.
+**Action:** Systematically audit admin forms and apply the standard validation pattern (class toggle + aria-describedby) to ensure consistent user feedback.
