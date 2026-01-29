@@ -15,6 +15,10 @@ class LoginController extends Controller
 
     public function postLogin(Request $request)
     {
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
 
         if (Auth::attempt(['email' => $request->email, 'password' =>  $request->password])) {
 

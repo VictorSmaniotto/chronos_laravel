@@ -11,7 +11,6 @@
         autocomplete="email"
         placeholder="nome@exemplo.com"
         value="{{ old('email') }}"
-        value="{{ old('email') }}"
         @error('email') aria-describedby="email-error" aria-invalid="true" @enderror
     >
 @error('email')
