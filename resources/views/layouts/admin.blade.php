@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <a href="#main-content" class="visually-hidden-focusable p-3 bg-light text-dark">Pular para o conteúdo principal</a>
+    <a href="#main-content" class="visually-hidden-focusable p-3">Pular para o conteúdo principal</a>
     <header>
       <div class="container-fluid shadow-sm">
         <nav class="navbar navbar-expand-sm">
@@ -74,7 +74,7 @@
             </div>
 
             <div class="col-9">
-               <section class="mt-5 ms-3 container-fluid">
+               <section id="main-content" class="mt-5 ms-3 container-fluid">
                    @yield('conteudo')
                </section>
             </div>
