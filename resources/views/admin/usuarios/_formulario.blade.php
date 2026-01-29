@@ -36,12 +36,12 @@
 
 <div class="col-md-6">
     <label for="senha" class="form-label">Senha</label>
-    <input type="password" name="password" class="form-control @error('senha') is-invalid @enderror" id="senha" placeholder="********">
-@error('password')
+    <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="senha" placeholder="********">
+    @error('password')
     <div class="invalid-feedback">
         {{ $message }}
     </div>
-@enderror
+    @enderror
 </div>
 
 
