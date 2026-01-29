@@ -74,7 +74,7 @@
             </div>
 
             <div class="col-9">
-               <section class="mt-5 ms-3 container-fluid">
+               <section id="main-content" class="mt-5 ms-3 container-fluid">
                    @yield('conteudo')
                </section>
             </div>
