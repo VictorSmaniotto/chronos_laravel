@@ -14,9 +14,10 @@
 <div class="col-md-12">
     <label for="nome_projeto" class="form-label">Título</label>
     <input type="text" class="form-control @error('nome_projeto') is-invalid @enderror" name="nome_projeto"
-        id="nome_projeto" placeholder="Título do Projeto" value="{{ old('nome_projeto', $projeto->nome_projeto)}}">
+        id="nome_projeto" placeholder="Título do Projeto" value="{{ old('nome_projeto', $projeto->nome_projeto)}}"
+        @error('nome_projeto') aria-describedby="nome_projeto_feedback" @enderror>
     @error('nome_projeto')
-        <div class="invalid-feedback">
+        <div class="invalid-feedback" id="nome_projeto_feedback">
             {{ $message }}
         </div>
     @enderror
@@ -25,10 +26,10 @@
 <div class="col-md-12">
     <label for="descricao" class="form-label">Descrição</label>
     <textarea name="descricao" class="form-control @error('descricao') is-invalid @enderror" id="descricao"
-        rows="4">{{ old('descricao', $projeto->descricao) }}</textarea>
+        rows="4" @error('descricao') aria-describedby="descricao_feedback" @enderror>{{ old('descricao', $projeto->descricao) }}</textarea>
 
     @error('descricao')
-        <div class="invalid-feedback">
+        <div class="invalid-feedback" id="descricao_feedback">
             {{ $message }}
         </div>
     @enderror
@@ -37,9 +38,9 @@
 <div class="col-md-12">
     <label for="objetivo" class="form-label">Objetivo</label>
     <textarea name="objetivo" class="form-control @error('objetivo') is-invalid @enderror" id="objetivo"
-        rows="4"> {{ old('objetivo', $projeto->objetivo) }} </textarea>
+        rows="4" @error('objetivo') aria-describedby="objetivo_feedback" @enderror> {{ old('objetivo', $projeto->objetivo) }} </textarea>
     @error('objetivo')
-        <div class="invalid-feedback">
+        <div class="invalid-feedback" id="objetivo_feedback">
             {{ $message }}
         </div>
     @enderror
@@ -48,9 +49,9 @@
 <div class="col-md-12">
     <label for="palavras_chave" class="form-label">Palavras Chave</label>
     <textarea name="palavras_chave" class="form-control @error('palavras_chave') is-invalid @enderror"
-        id="palavras_chave" rows="4">{{ old('palavras_chave', $projeto->palavras_chave) }}</textarea>
+        id="palavras_chave" rows="4" @error('palavras_chave') aria-describedby="palavras_chave_feedback" @enderror>{{ old('palavras_chave', $projeto->palavras_chave) }}</textarea>
     @error('palavras_chave')
-        <div class="invalid-feedback">
+        <div class="invalid-feedback" id="palavras_chave_feedback">
             {{ $message }}
         </div>
     @enderror
@@ -86,16 +87,16 @@
 
 <div class="col-md-6">
     <label for="categoria_id" class="form-label">Categoria</label>
-    <select class="form-control @error('categoria_id') is-invalid @enderror" id="categoria_id" name="categoria_id">
+    <select class="form-control @error('categoria_id') is-invalid @enderror" id="categoria_id" name="categoria_id" @error('categoria_id') aria-describedby="categoria_id_feedback" @enderror>
         <option value=""> Selecione </option>
         @foreach ($categorias as $cate)
-            <option value="{{$cate->id}}" {{(isset($projeto->curso_id) || old('id')) ? "selected" : "" }}>
+            <option value="{{$cate->id}}" {{ (old('categoria_id', $projeto->categoria_id) == $cate->id) ? 'selected' : '' }}>
                 {{$cate->nome_categoria}}
             </option>
         @endforeach
     </select>
     @error('categoria_id')
-        <div class="invalid-feedback">
+        <div class="invalid-feedback" id="categoria_id_feedback">
             {{ $message }}
         </div>
     @enderror
@@ -103,16 +104,16 @@
 
 <div class="col-md-6">
     <label for="curso_id" class="form-label">Curso</label>
-    <select class="form-control @error('curso_id') is-invalid @enderror" id="curso_id" name="curso_id">
+    <select class="form-control @error('curso_id') is-invalid @enderror" id="curso_id" name="curso_id" @error('curso_id') aria-describedby="curso_id_feedback" @enderror>
         <option value=""> Selecione </option>
         @foreach ($cursos as $cur)
-            <option value="{{$cur->id}}" {{(isset($projeto->curso_id) || old('id')) ? "selected" : "" }}>
+            <option value="{{$cur->id}}" {{ (old('curso_id', $projeto->curso_id) == $cur->id) ? 'selected' : '' }}>
                 {{$cur->nome_curso}}
             </option>
         @endforeach
     </select>
     @error('curso_id')
-        <div class="invalid-feedback">
+        <div class="invalid-feedback" id="curso_id_feedback">
             {{ $message }}
         </div>
     @enderror
