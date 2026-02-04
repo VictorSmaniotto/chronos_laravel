@@ -12,3 +12,11 @@ When implementing forms in Blade:
 2. Assign a unique ID to the error message container (e.g., `id="email-error"`).
 3. Add `@error('field') aria-describedby="email-error" @enderror` to the input.
 4. Ensure `value="{{ old('field') }}"` is present to preserve user context.
+
+## 2024-12-21 - [Verification of Blade Templates via Static HTML Mocks]
+**Learning:** When the backend environment is unavailable (e.g. PHP version mismatch), we can verify Blade template accessibility improvements by creating a temporary static HTML mock that simulates the "rendered" state (stripping directives and manually injecting error classes). This allows Playwright to verify DOM attributes like `aria-describedby` without running the Laravel app.
+**Action:** Use this "Mock & Verify" pattern when backend tests are blocked. Create `tests/verification/mock.html`, run a script, then delete it.
+
+## 2024-12-21 - [Client-Side Validation Complement]
+**Learning:** While server-side validation is robust, omitting the `required` attribute on inputs degrades the immediate user experience. Users submit the form only to wait for a reload to see "Required field".
+**Action:** Always mirror server-side `required` rules with the HTML `required` attribute for instant browser feedback.
