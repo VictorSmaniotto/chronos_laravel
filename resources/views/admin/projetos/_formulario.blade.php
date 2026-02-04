@@ -14,9 +14,10 @@
 <div class="col-md-12">
     <label for="nome_projeto" class="form-label">Título</label>
     <input type="text" class="form-control @error('nome_projeto') is-invalid @enderror" name="nome_projeto"
-        id="nome_projeto" placeholder="Título do Projeto" value="{{ old('nome_projeto', $projeto->nome_projeto)}}">
+        id="nome_projeto" placeholder="Título do Projeto" value="{{ old('nome_projeto', $projeto->nome_projeto)}}" required
+        @error('nome_projeto') aria-describedby="nome_projeto_error" @enderror>
     @error('nome_projeto')
-        <div class="invalid-feedback">
+        <div id="nome_projeto_error" class="invalid-feedback">
             {{ $message }}
         </div>
     @enderror
@@ -25,10 +26,10 @@
 <div class="col-md-12">
     <label for="descricao" class="form-label">Descrição</label>
     <textarea name="descricao" class="form-control @error('descricao') is-invalid @enderror" id="descricao"
-        rows="4">{{ old('descricao', $projeto->descricao) }}</textarea>
+        rows="4" required @error('descricao') aria-describedby="descricao_error" @enderror>{{ old('descricao', $projeto->descricao) }}</textarea>
 
     @error('descricao')
-        <div class="invalid-feedback">
+        <div id="descricao_error" class="invalid-feedback">
             {{ $message }}
         </div>
     @enderror
@@ -37,9 +38,9 @@
 <div class="col-md-12">
     <label for="objetivo" class="form-label">Objetivo</label>
     <textarea name="objetivo" class="form-control @error('objetivo') is-invalid @enderror" id="objetivo"
-        rows="4"> {{ old('objetivo', $projeto->objetivo) }} </textarea>
+        rows="4" required @error('objetivo') aria-describedby="objetivo_error" @enderror> {{ old('objetivo', $projeto->objetivo) }} </textarea>
     @error('objetivo')
-        <div class="invalid-feedback">
+        <div id="objetivo_error" class="invalid-feedback">
             {{ $message }}
         </div>
     @enderror
@@ -48,9 +49,9 @@
 <div class="col-md-12">
     <label for="palavras_chave" class="form-label">Palavras Chave</label>
     <textarea name="palavras_chave" class="form-control @error('palavras_chave') is-invalid @enderror"
-        id="palavras_chave" rows="4">{{ old('palavras_chave', $projeto->palavras_chave) }}</textarea>
+        id="palavras_chave" rows="4" @error('palavras_chave') aria-describedby="palavras_chave_error" @enderror>{{ old('palavras_chave', $projeto->palavras_chave) }}</textarea>
     @error('palavras_chave')
-        <div class="invalid-feedback">
+        <div id="palavras_chave_error" class="invalid-feedback">
             {{ $message }}
         </div>
     @enderror
@@ -60,13 +61,25 @@
 
 <div class="col-md-12">
     <label for="capa" class="form-label">Capa</label>
-    <input type="file" class="form-control" id="capa" name="capa" value="{{ old('capa', $projeto->capa) }}">
+    <input type="file" class="form-control @error('capa') is-invalid @enderror" id="capa" name="capa" value="{{ old('capa', $projeto->capa) }}"
+        @error('capa') aria-describedby="capa_error" @enderror>
+    @error('capa')
+        <div id="capa_error" class="invalid-feedback">
+            {{ $message }}
+        </div>
+    @enderror
 </div>
 
 <div class="col-md-4">
     <label for="data_criacao" class="form-label">Criado em</label>
-    <input type="date" class="form-control" id="data_criacao" name="data_criacao"
-        value="{{ old('data_criacao', $projeto->data_criacao) }}">
+    <input type="date" class="form-control @error('data_criacao') is-invalid @enderror" id="data_criacao" name="data_criacao"
+        value="{{ old('data_criacao', $projeto->data_criacao) }}" required
+        @error('data_criacao') aria-describedby="data_criacao_error" @enderror>
+    @error('data_criacao')
+        <div id="data_criacao_error" class="invalid-feedback">
+            {{ $message }}
+        </div>
+    @enderror
 </div>
 
 <div class="col-md-4">
@@ -77,16 +90,23 @@
 
 <div class="col-md-4">
     <label for="situacao" class="form-label">Situação</label>
-    <select class="form-control" id="situacao" name="situacao">
+    <select class="form-control @error('situacao') is-invalid @enderror" id="situacao" name="situacao" required
+        @error('situacao') aria-describedby="situacao_error" @enderror>
         <option value="1" {{ old('situacao', $projeto->situacao) == '1' ? 'selected' : '' }}>Ativo</option>
         <option value="2" {{ old('situacao', $projeto->situacao) == '2' ? 'selected' : '' }}>Inativo</option>
     </select>
+    @error('situacao')
+        <div id="situacao_error" class="invalid-feedback">
+            {{ $message }}
+        </div>
+    @enderror
 </div>
 
 
 <div class="col-md-6">
     <label for="categoria_id" class="form-label">Categoria</label>
-    <select class="form-control @error('categoria_id') is-invalid @enderror" id="categoria_id" name="categoria_id">
+    <select class="form-control @error('categoria_id') is-invalid @enderror" id="categoria_id" name="categoria_id" required
+        @error('categoria_id') aria-describedby="categoria_id_error" @enderror>
         <option value=""> Selecione </option>
         @foreach ($categorias as $cate)
             <option value="{{$cate->id}}" {{(isset($projeto->curso_id) || old('id')) ? "selected" : "" }}>
@@ -95,7 +115,7 @@
         @endforeach
     </select>
     @error('categoria_id')
-        <div class="invalid-feedback">
+        <div id="categoria_id_error" class="invalid-feedback">
             {{ $message }}
         </div>
     @enderror
@@ -103,7 +123,8 @@
 
 <div class="col-md-6">
     <label for="curso_id" class="form-label">Curso</label>
-    <select class="form-control @error('curso_id') is-invalid @enderror" id="curso_id" name="curso_id">
+    <select class="form-control @error('curso_id') is-invalid @enderror" id="curso_id" name="curso_id" required
+        @error('curso_id') aria-describedby="curso_id_error" @enderror>
         <option value=""> Selecione </option>
         @foreach ($cursos as $cur)
             <option value="{{$cur->id}}" {{(isset($projeto->curso_id) || old('id')) ? "selected" : "" }}>
@@ -112,7 +133,7 @@
         @endforeach
     </select>
     @error('curso_id')
-        <div class="invalid-feedback">
+        <div id="curso_id_error" class="invalid-feedback">
             {{ $message }}
         </div>
     @enderror
