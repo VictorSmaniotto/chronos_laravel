@@ -12,3 +12,7 @@ When implementing forms in Blade:
 2. Assign a unique ID to the error message container (e.g., `id="email-error"`).
 3. Add `@error('field') aria-describedby="email-error" @enderror` to the input.
 4. Ensure `value="{{ old('field') }}"` is present to preserve user context.
+
+## 2024-12-21 - [Mocking Blade for Accessibility Verification]
+**Learning:** When PHP runtime is unavailable, Blade templates can be verified for accessibility attributes (like `aria-describedby` inside `@error`) by generating static HTML mocks that simulate both "clean" and "error" states using Regex.
+**Action:** Use Python scripts to strip Blade directives and inject dummy error content to verify that accessibility attributes are correctly rendered before committing.
